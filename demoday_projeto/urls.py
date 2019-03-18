@@ -34,6 +34,8 @@ urlpatterns = [
     path('guiaresultadosoutros/', views.render_guiaresultadosacademia),
     path('parceiras/', views.render_parceiras),
     path('parceirasresultados/', views.render_parceirasresultados),
+    path('parceirasresultadospersonal/', views.render_parceirasresultadospersonal),
+    path('parceirasresultadospsicologa/', views.render_parceirasresultadospsicologa),
     path('cadastroparceiras/', views.render_cadastroparceiras),
     path('forum/', views.render_forum),
     path('salvarparceiras/', views.salvarparceiras),

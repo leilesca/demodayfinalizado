@@ -67,6 +67,14 @@ def render_parceirasresultados(request):
     parceiras = FiltroParceiras.objects.all()
     return render(request, 'parceirasresultados.html', {'itemsparceiras' : parceiras})
 
+def render_parceirasresultadospersonal(request):
+    parceiras = FiltroParceiras.objects.all()
+    return render(request, 'parceirasresultadospersonal.html', {'itemsparceiras' : parceiras})
+
+def render_parceirasresultadospsicologa(request):
+    parceiras = FiltroParceiras.objects.all()
+    return render(request, 'parceirasresultadospsicologa.html', {'itemsparceiras' : parceiras})
+
 def render_cadastroparceiras(request):
     form = forms.ParceirasCriarForm(request.POST or None)
     form.is_valid()
