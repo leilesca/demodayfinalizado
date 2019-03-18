@@ -1,0 +1,17 @@
+{% extends 'layout.html' %} 
+{% load staticfiles %}
+
+{% block content %}
+
+    <div>
+        {%  for i in dadosusuario %}
+        {% if i.nome == "Advogada" %}
+            <p>{{i.nome}}</p>
+            <p>{{i.usuario.nome_usuario}}</p>
+            <p>{{i.usuario.dt_nasc_usuario}}</p>
+            <p>{{i.usuario.email_usuario}}</p>
+        {% endif %}
+        {% endfor %}
+    </div>
+
+{% endblock %}

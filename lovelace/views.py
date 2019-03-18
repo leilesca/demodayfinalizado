@@ -15,14 +15,13 @@ def render_cadastrousuario(request):
 
 def salvarusuario(request):
     form = forms.UsuarioCriarForm(request.POST or None)
-    form.is_valid()
-    usuario_obj = Usuario.objects.create()
-    usuario_obj.nome_usuario = request.POST['nome_usuario']
-    usuario_obj.dt_nasc_usuario = request.POST['dt_nasc_usuario']
-    usuario_obj.email = request.POST['email']
-    usuario_obj.senha = request.POST['senha']
-    usuario_obj.save()
+    if form.is_valid():
+        form.save()
     return redirect('/cadastrousuario/')
+
+def render_usuario(request):
+    usuario = PerfilUsuario.objects.all()
+    return render(request, 'usuario.html', {'dadosusuario' : usuario})
 
 def render_home(request):
     return render(request, 'home.html')

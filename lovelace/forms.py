@@ -64,9 +64,9 @@ class UsuariooCriarForm(forms.Form):
 
     dt_nasc_usuario = forms.DateTimeField(
         label='Data de Nascimento',
-        input_formats=['%d/%m/%Y'],
+        #input_formats=['%d/%m/%Y'],
         widget=forms.DateInput(
-            format='%d/%m/%Y',
+            #format='%d/%m/%Y',
             attrs={
                 'required' : True,
                 'id' : 'dt_nasc_usuario',

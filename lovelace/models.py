@@ -6,11 +6,17 @@ from django.utils import timezone
 
 class Usuario(models.Model):
     nome_usuario = models.CharField(max_length=100, verbose_name="Nome")
-    dt_nasc_usuario = models.DateTimeField(verbose_name="Data de Nascimento", default="DD/MM/AAAA")
+    dt_nasc_usuario = models.DateField(verbose_name="Data de Nascimento")
     email_usuario = models.EmailField(max_length=256, verbose_name="Email")
     senha_usuario = models.CharField(max_length=256, verbose_name="Senha")
     class Meta:
         verbose_name_plural = "Usuario"
+
+class PerfilUsuario(models.Model):
+    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
+    nome = models.CharField(max_length=200, default='')
+    class Meta:
+        verbose_name_plural = "PerfilUsuario"
 
 class Parceiras(models.Model):
     nome_parceira = models.TextField()
