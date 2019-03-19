@@ -40,7 +40,7 @@
                     <p>{{i.estabelecimentos.horario_estabelecimento}}</p>
                     <p>{{i.estabelecimentos.telefone_estabelecimento}}</p><br>
                 </div>
-                <img class="foto" src="{% static 'icones/1007.png' %} " alt=""> 
+                <img class="foto" src="{{i.estabelecimentos.imagem}}" alt=""> 
             </div>
         {% endif %}
         {% endfor %}

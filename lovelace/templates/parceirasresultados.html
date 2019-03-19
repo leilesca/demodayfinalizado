@@ -43,7 +43,7 @@
                 <p>{{i.parceiras.telefone_parceiras}}/{{i.parceiras.celular_parceiras}}</p>
                 <p>{{i.parceiras.email_parceiras}}</p><br>
             </div>
-            <img class="foto-parceira" src="{% static 'icones/dest_janaina_06.jpg' %} " alt=""> 
+            <img class="foto-parceira" src="{{i.parceiras.imagem}}" alt=""> 
         </div>
         {% endif %}
         {% endfor %}
