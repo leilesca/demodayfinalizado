@@ -1,17 +1,22 @@
+#aqui virá toda a lógica da aplicação. Vai extrair as informações da model e entregá-las a um template.
+
 from django.shortcuts import render, redirect
 from lovelace import forms
+# Incluir os modelos/classes (definidos em models.py):
 from .models import Usuario, Parceiras, Estabelecimento, Categoria, FiltroParceiras
-# Incluir os modelos/classes (definidos em models.py)
 
 # Create your views here.
 
 def render_index(request):
     return render(request, 'index.html')
+    #criada uma função (def) chamada render_index que recebe um parâmetro request, executa a função render que irá renderizar o modelo (banco) de acordo com o template index.html e retorna o resultado
+    #request -> tudo que recebemos do usuário através da internet
 
 def render_cadastrousuario(request):
     form = forms.UsuarioCriarForm(request.POST or None)
     form.is_valid()
     return render(request, 'cadastrousuario.html', {'form': form})
+    #funçao render que possui o parâmetro request
 
 def salvarusuario(request):
     form = forms.UsuarioCriarForm(request.POST or None)

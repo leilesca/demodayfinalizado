@@ -16,11 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from lovelace import views
+#importará as views definidas na aplicação lovelace
 from django.views.generic import TemplateView
 from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # para cada URL que começa com admin/, o Django irá encontrar uma view correspondente.
     path('index/', views.render_index),
     path('cadastrousuario/', views.render_cadastrousuario),
     path('usuario/', views.render_usuario),
@@ -41,4 +43,7 @@ urlpatterns = [
     path('forum/', views.render_forum),
     path('salvarparceiras/', views.salvarparceiras),
     path('salvarusuario/', views.salvarusuario)
+    #para ver depois: para manter este arquivo limpo, importar as URLs da aplicação blog. Por exemplo:
+        #path('admin/', admin.site.urls),
+        #path('', include('lovelace.urls')),
 ]
