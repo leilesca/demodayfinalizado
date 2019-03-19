@@ -1,105 +1,220 @@
 body{
     margin:0;
-    background-color:rgb(238, 217, 223);
-    padding: 0;
 }
+
 /* LAYOUT */
-header{  
-    height: 10%;
+
+nav{  
+    height: 7%;
     display:flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: row;
     background-color: white;
+    text-align: center;
 }
-header img{
+nav a{
+    font-size: 14pt;
+    text-decoration: none;
+    font-family: "Poiret One";
+    font-weight: bold;
+    margin-left: 10pt;
+    padding:10px;
+    color:#FF0047;
+}
+nav img{
     margin: 0 10px;
-    width: 40px;
+    width: 35px;
     height: auto;
 }
-header h1{    
-    width: calc(100% - 120px);
-    text-align: center;
-    color: #ff366e;
-    font-family: "Poiret One";
-    cursor:pointer;
+#search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-footer{
-    bottom:0;
-    background-color:#FF6691;
+#search input{
+    margin-left:0;
+    font-size:16pt;
 }
+#search input[type="text"]{
+    height: 35px;
+    border:solid;
+    border-width: thin;
+    border-radius: 12px;
+    border-color:#FF99B5;
+    font-size:12pt;
+}
+#search input[type="image"]{
+    height:60%;
+    width: auto;
+    background-color: white;
+    padding:7px;
+    border-radius:50%;
+}
+header{
+    background-color:black;
+    height:80vh;
+}
+header h1{
+    margin:0;
+    font-family: "poiret one";
+    color:white;
+    font-weight: bold;
+}
+header img{
+    width:100%;
+    height: 80vh;
+    margin:0;
+   
+}
+
 /* HOME */
+#pagina-home{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+#home{
+    height: 15vh;
+    background-color:black;
+    display: table;
+    text-align:center;
+    justify-content: center;
+}
+#pagina-home h1{
+    margin-top:30px; 
+    color:white;
+    font-family: "poiret one";
+    font-weight: bold;
+}
+#colunas{
+    display:flex;
+    margin-top:40px;
+    margin-bottom:60px;
+    justify-content: center;
+}
+#colunas h1{
+    font-family: "poiret one";
+    font-weight: bold;
+    margin:0;
+    color:#FF0047;
+}
 .padrao{
-    height:21.25vh;
+    margin: 70px;
+    border-radius: 12pt;
+    margin-top:50px;
+    text-align: center;
+    height:250px;
+    width:330px;
+    background-color: rgb(243, 231, 234);
+    cursor:pointer;
+    box-shadow:-12px 12px 3px #FF99B5;
+}
+.padrao img:hover{
+    filter:brightness(150%);
+    transition: 0.3s;
 }
 .padrao img{
-    margin-left:10vw;
-    margin-top: 0.5%;
-    height:95%;
+    margin-top:10px;
+    height:40%;
+    width:auto;
 }
 .padrao p{
-    display:none;
-    font-family: "Poiret One";
-    font-weight: bolder;
+    margin:3pt;
+    font-family:"poiret one";
+    font-weight: bold;
+}
+footer{
+    margin-top:100px;
+    align-items: center;
+    text-align: end;
     color:white;
-    font-size:18px;
-    margin-top:3%;
+    background-color:black;
+    height: 7vh;
+    bottom:100%;
+    display:flex;
+    justify-content: space-between;
 }
-#map {
-    background-color: #FF99B5;
+footer img{
+    height: 90%;
+    width:auto;
 }
-#guide{
-    background-color: #FF6691;
-}
-#help{
-    background-color: #FF366E;
-}
-#forum{
-    background-color: #FF0047;
-}
-
-
 /* LOGIN */
 
 .header-login{
     display:flex;
-    flex-direction: row;
-    align-items: center;
+    height: 15vh;
+    background-color:black;
+    text-align:center;
     justify-content: center;
-    height: 10%;
-    background-color: white;
 }
+.header-login h1{
+    margin-top:25px;
+    color:white;
+    font-family: "poiret one";
+    font-weight: bold;
+}
+
 .login {
 
     display: flex;
     flex-direction: column;
     align-items:center;
+    margin-top:40px;
     margin-left:10px;
-    width: 60vw;
-    height: 70vh;
+    margin-bottom:50px;
+    width:25vw;
+    height: 80vh;
     border-width: 2px;
     border-radius: 12px;
-    background-color:#FF6691;
+    background-color:rgb(243, 231, 234);
+    box-shadow:-7px 7px 3px #FF99B5;
+    
+}
+.login img{
+    margin-top: 10px;
+    height: 30%;
+    width:50%;
     
 }
 .index{
     display:flex;
     justify-content: center;
     margin-top:5vh;
+    margin-bottom: 60px;
+    
 }
 .login h1{
-    color: white;
+    color: black;
     height: 10px;
-    font-size: 22pt;
+    font-size:26pt;
     font-family: "Poiret One";
     margin-bottom:60px;
-    margin-top:30px;
+    margin-top:15px;
+    
+}
+.login p{
+    margin:0;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Poiret One";
+    color: #FF0047;
+
+}
+input{
+    height: 40px;
+    width: 240px;
+    
 }
 .login input{
     margin:7px;
     height: 35px;
     border-radius:12px;
     align-items: center;
-    border:none;
+    border:solid;
+    border-width: thin;
+    border-color:#FF99B5;
     
 }
 .login a{
@@ -128,21 +243,81 @@ footer{
     margin-top:20px;
 }
 
-@media (min-width:1024px){
-    .login{
-        width:25vw;
-    }
-    .login h1{
-        font-size:26pt;
-    }
-    input{
-        height: 40px;
-        width: 240px;
-        margin:10px;
-    }
-    input[type=submit]{
-        font-size: 14pt;
-    }
+
+/* GUIA */
+#guia{
+    display:flex;
+    height: 15vh;
+    background-color:black;
+    text-align:center;
+    justify-content: center;
+}
+#guia h1{
+    margin-top:25px;
+    color:white;;
+    font-family: "poiret one";
+    font-weight: bold;
+}
+#busca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF99B5;
+    height:15%;
+}
+#busca input{
+    width: 40%;
+    margin-left:0;
+    font-size:16pt;
+}
+#pagina-guia{
+    margin-top:7vh;
+    margin-bottom:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categorias{
+    width: 400px;
+    height: 250px; 
+    background-color: rgb(243, 231, 234);
+    box-shadow:-12px 12px 3px #FF99B5;
+    border-radius:10px;
+    margin: 0 40px 0;
+    margin-bottom: 30px;
+    cursor:pointer;
+    display:block;
+    text-align: center;
+}
+
+#pagina-guia img{
+    height: 70%;
+    width:auto;
+}
+#pagina-guia p{
+    padding-top:10px;
+    margin-bottom:5px;
+    font-family: "Poiret one";
+    display: flex;
+    justify-content: center;
+    font-size:22pt;
+    font-weight: bolder;
+    color:#FF0047;
+}
+#pagina-guia img:hover{
+    opacity:0.7;
+    transition:0.4s;
+}
+#busca input[type="image"]{
+    height:60%;
+    width: auto;
+    background-color: white;
+    padding:7px;
+    border-radius:50%;
+}
+#busca input[type="text"]{
+    border-radius:3px;
+    border:none;
 }
 /* CADASTRO */
 /* #cadastro{
@@ -216,61 +391,145 @@ footer{
     }
 } */
 
-/* GUIA */
 
-#busca{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FF366E;
-    height:10%;
-}
-#busca input{
-    width: 40%;
-    margin-left:0;
-    font-size:16pt;
-}
-#pagina-guia{
-    margin-top:5vh;
-    display: flex;
+/* RETORNO GUIA */
+.titulo{
+    height: 10vh;
+    font-family: "Poiret one";
+    font-weight: bold;
+    background-color: #FF99B5;
+    margin:0;
+    color:white;
+    display:flex;
     justify-content: center;
     align-items: center;
 }
-#pagina-guia img{
-    width: 425px;
-    height: 250px;
+.info{
+    margin-right: 60px;
+    margin-top: 40px;
     display: flex;
-    background-color: white;
-    border-radius:12px;
-    margin: 0 40px 0;
+    margin-left: 50px;
+    text-align: center;
+    justify-content: space-around;
+    background-color: rgb(243, 231, 234);
+    box-shadow:-7px 7px 3px #FF99B5;
     cursor:pointer;
 }
-#pagina-guia div p{
-    margin-top:4px;
-    font-family: "Poiret one";
-    display: flex;
-    justify-content: center;
-    font-size:20pt;
-    font-weight: bolder;
-    color:#FF0047;
+.foto{
+    margin-top: 8px;
+    height: 70%;
+    width:auto;
+    border:solid;
+    border-width: medium;
+    border-color: rgb(240, 173, 190);
+    margin-bottom: 8px;
+    
 }
-#pagina-guia img:hover{
-    opacity:0.7;
-    transition:0.3s;
-}
-#busca input[type="image"]{
-    height:60%;
-    width: auto;
-    background-color: white;
-    padding:7px;
-    border-radius:50%;
-}
-#busca input[type="text"]{
-    border-radius:12px;
-    border:none;
-}
+.nome{
+    width:100%;
+    color:white;
+    padding:5pt;
+    background-color: #FF0047;
+    font-family: "poiret one";
+    font-weight: bold;
+    font-size: 22pt;
+} 
 
-@media (max_width:768px){
-    toggle{
-        display: block;
-    }
+.info-texto p{
+    font-family: "poiret one";
+    font-weight: bold;
+
+}
+.info-texto p:nth-child(2){
+    font-size:18pt;
+}
+/* PARCEIRAS */
+.parceiras{
+    margin-left:20vw;
+    background: rgb(243, 231, 234);
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+    padding-bottom: 30px;
+    width:60%;
+    border-radius:12px;
+}
+.parceiras h1{
+    font-family: "poiret one";
+    font-weight: bold;
+    font-size:30pt;
+}
+.profissao{
+    box-shadow:-7px 7px 3px #FF99B5;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width:60%;
+    height:40%;
+    border-radius: 12px;
+    padding:20px;
+    margin:10px;
+    background-color:white;
+    cursor: pointer;
+}
+.profissao img{
+    height:150px;
+    width:150px;
+}
+.profissao p{
+    font-family:"Poiret One";
+    font-weight: bold;
+    font-size:24px;
+    color: #FF0047;
+    margin:0;
+    margin-top:10px;
+}
+.profissao img:hover{
+    filter:brightness(150%);
+    transition: 0.3s;
+}
+/* RETORNO PARCEIRAS */
+.info-parceiras {
+    background-color: rgb(243, 231, 234);
+    height:40vh;
+    width: 90vw;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: space-around;
+    font-family: "poiret one";
+    font-weight: bold;
+    box-shadow:-7px 7px 3px #FF99B5;
+    border-radius:12px;
+}
+.foto-parceira{
+    margin-top: 30px;
+    height: 70%;
+    width:auto;
+    border:solid;
+    border-width: medium;
+    border-color: rgb(240, 173, 190);
+    
+}
+.nome-parceira{
+    border-radius:3px;
+    width:100%;
+    color:white;
+    padding:5pt;
+    background-color: #FF0047;
+    font-family: "poiret one";
+    font-weight: bold;
+    font-size: 22pt;
+    margin-top:20px;
+}
+.info-parceiras img{
+    border-radius:3px;
+}
+.info-texto-parceiras p{ 
+    font-family: "poiret one";
+    font-weight: bold;
+}

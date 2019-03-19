@@ -10,6 +10,7 @@
     <title>Lovelace.</title>
 </head>
 
+<!--
 <body>
         <header class="header-login">
                 <h1>LOVELACE</h1>
@@ -26,5 +27,31 @@
             </div>    
         </div>
     </div>
+</body>
+-->
+
+<body>
+    <header class="header-login">
+        <h1>LOGIN</h1>
+    </header>
+    <div class="index">
+        <div class="login">
+            <img  src="{% static 'icones/LOGO_IMAGEM.png' %} " alt=""> 
+            <P>LOVELACE</P>
+            <h1>Seja bem vinda</h1>
+            <input type="email" name="email" placeholder="  Email"/>
+            <input type="password" name="senha" placeholder="   Senha"/>
+            <a href="">Esqueci minha senha</a>
+            <div class="botoes-submit">
+                <input type="submit" value="Entrar" onclick="window.location='/home/'">
+                <input type="submit" value="Cadastre-se" onclick="window.location='/cadastrousuario/'">
+            </div>    
+        </div>
+    </div>
+    
+    <footer> 
+        <img src="{% static 'icones/LOGO_IMAGEM.png' %}" alt=""> 
+        <p>Desenvolvido por alunas Mastertech © Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>

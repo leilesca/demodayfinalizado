@@ -3,18 +3,18 @@
 
 {% block content %}
 <div class="index" >
-    <div id="cadastro"> <h1>Cadastro</h1>
+    <div id="cadastro">
+        <br><br><br>
         <form action="/salvarusuario/" method="POST">
             {% csrf_token %}
             {{form.as_p}}
-            <button type="submit"> Cadastrar</button>
+            <button type="submit" onclick="window.location='/index/'"> Cadastrar</button>
         </form>
         <!--
         <div class="linha-cadastro">
             <p>Nome <br> completo</p>
             <input type="text" name="nome" placeholder="    Nome completo">
         </div>
-
         <div class="linha-cadastro">
             <p>Data de nascimento</p>
             <input type="date" name="dataDeNascimento" placeholder="    Data de nascimento">

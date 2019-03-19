@@ -1,23 +1,38 @@
 {% load staticfiles %}
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script defer src="{% static 'js/scripts.js' %}"></script>
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-    <title>Lovelace</title>
+    <title>Lovelace.</title>
 </head>
-
 <body>
-    <header>
-        <h1 onclick="window.location='/home/'">LOVELACE</h1>
-    </header>
+    <nav>
+        <div id="ancoras-nav">
+            <a href='/home'>Home</a>
+            <a href="">Perfil</a> 
+            <a href="">Histórico</a>
+            <a href="">Seja Parceira</a>
+            <a href="">Ajuda</a>
+        </div>
+        <div id="search">
+            <input type="text" name="busca">
+            <input type="image" src="{% static 'icones/musica-searcher.png' %}" alt="Submit" />
+        </div>
+    </nav>
+    <div id="guia">
+        <h1>CADASTRO</h1>
+    </div>
+    {% block content %}
 
- {% block content %}
+    {% endblock %}
 
- {% endblock %}
+    <footer>
+        <img src="{% static 'icones/LOGO_IMAGEM.png' %}" alt=""> 
+        <p>Desenvolvido por alunas Mastertech © Todos os direitos reservados</p>
+    </footer>
 </body>
+</html>
