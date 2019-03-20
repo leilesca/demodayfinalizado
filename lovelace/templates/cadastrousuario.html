@@ -2,7 +2,8 @@
 {% load staticfiles %}
 
 {% block content %}
-<!-- <div class="index" >
+<!-- 
+    <div class="index" >
     <div id="cadastro">
         <br><br><br>
         <h1>SEJA BEM VINDA</h1>
@@ -10,8 +11,11 @@
             {% csrf_token %}
             {{form.as_p}}
             <button type="submit" onclick="window.location='/index/'"> Cadastrar</button>
-        </form> -->
- <div id="cadastro">   
+        </form>
+-->
+
+
+    <div id="cadastro">   
         <h1>Seja bem vinda</h1>
         <div class="linha-cadastro">
             <p>Nome</p>
@@ -29,8 +33,7 @@
             <p>Senha</p>
             <input type="password" name="senha" placeholder="   Senha">
         </div>
-            <input type="submit" value="Cadastrar" onclick="window.location='/index/'">
-
+        <input type="submit" value="Cadastrar" onclick="window.location='/index/'">
     </div>
 </div>
 {% endblock %}

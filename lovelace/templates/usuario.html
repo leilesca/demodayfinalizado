@@ -27,21 +27,21 @@
     <div id="guia">
         <h1>PERFIL</h1>
     </div>
-    <div>
-        {%  for i in dadosusuario %}
+    <h1 class="titulo">DADOS</h1>
+    {%  for i in dadosusuario %}
+    {% if i.nome == "Teste" %}
+           
         
         <div class="info">
             <div class="info-texto">
-                <p class="nome">{{i.nome}}</p>
-                <p>{{i.usuario.nome_usuario}}</p>
+                <p class="nome">{{i.usuario.nome_usuario}}</p>
                 <p>{{i.usuario.dt_nasc_usuario}}</p>
                 <p>{{i.usuario.email_usuario}}</p>        
             </div>
-            <img class="foto" src="{% static 'icones/1007.png' %} " alt=""> 
+            <img class="foto" src="{{i.usuario.imagem}}" alt=""> 
         </div>
     {% endif %}
     {% endfor %}
-</div>
 
 <footer>
     <img src="{% static 'icones/LOGO_IMAGEM.png' %}" alt=""> 

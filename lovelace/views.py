@@ -3,7 +3,7 @@
 from django.shortcuts import render, redirect
 from lovelace import forms
 # Incluir os modelos/classes (definidos em models.py):
-from .models import Usuario, Parceiras, Estabelecimento, Categoria, FiltroParceiras
+from .models import Usuario, Parceiras, Estabelecimento, Categoria, FiltroParceiras,PerfilUsuario
 
 # Create your views here.
 

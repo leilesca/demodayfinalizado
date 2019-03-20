@@ -8,6 +8,7 @@ class Usuario(models.Model):
     dt_nasc_usuario = models.DateField(verbose_name="Data de Nascimento")
     email_usuario = models.EmailField(max_length=256, verbose_name="Email")
     senha_usuario = models.CharField(max_length=256, verbose_name="Senha")
+    imagem = models.CharField(max_length=250, default='')
     class Meta:
         verbose_name_plural = "Usuario"
 
