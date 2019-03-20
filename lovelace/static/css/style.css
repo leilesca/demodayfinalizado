@@ -402,13 +402,13 @@ input{
     cursor:pointer;
 }
 .foto{
-    margin-top: 8px;
-    height: 70%;
-    width:auto;
+    margin-top: 18px;
+    margin-bottom:10px;
+    height:200px;
+    width:200px;
     border:solid;
     border-width: medium;
     border-color: rgb(240, 173, 190);
-    margin-bottom: 8px;
     
 }
 .nome{
@@ -428,6 +428,22 @@ input{
 }
 .info-texto p:nth-child(2){
     font-size:18pt;
+}
+.nota-estabelecimento{
+    margin-top:60px;
+    font-family: "poiret one";
+    font-weight: bold;
+    font-size:20pt;
+    background-color: #FF99B5;
+    height: 100px;
+    width:100px;
+    border-radius:5px;
+}
+#ancoraperfil{
+    font-family: "poiret one";
+    text-decoration:none;
+    font-weight: bold;
+    font-size:20px;
 }
 /* PARCEIRAS */
 .parceiras{

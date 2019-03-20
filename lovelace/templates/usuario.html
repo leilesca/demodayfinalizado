@@ -36,12 +36,15 @@
             <div class="info-texto">
                 <p class="nome">{{i.usuario.nome_usuario}}</p>
                 <p>{{i.usuario.dt_nasc_usuario}}</p>
-                <p>{{i.usuario.email_usuario}}</p>        
+                <p>{{i.usuario.email_usuario}}</p>  
+                <a id='ancoraperfil' href="">Editar perfil</a>
+      
             </div>
             <img class="foto" src="{{i.usuario.imagem}}" alt=""> 
         </div>
     {% endif %}
     {% endfor %}
+
 
 <footer>
     <img src="{% static 'icones/LOGO_IMAGEM.png' %}" alt=""> 
