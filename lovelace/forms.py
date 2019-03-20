@@ -15,16 +15,6 @@ class UsuarioCriarForm(forms.ModelForm):
             'senha_usuario'
         ]
 
-class FormGuia(forms.ModelForm):
-    class Meta:
-        model = Formulario
-        fields = [
-            'iluminado',
-            'movimentado',
-            'vigilancia',
-            'seguranca'
-        ]
-
 class Vota(forms.Form):
     VOTA=[('iluminado', 'Iluminado?'),
          ('movimentado','Movimentado'),

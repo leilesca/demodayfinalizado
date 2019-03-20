@@ -3,7 +3,7 @@ from django.contrib import admin
 # Register your models here.
  
 # Importa todos os modelos criados em models.py
-from.models import Usuario, Parceiras, Votacao, Opiniao, TipoAtendimento, Estabelecimento, Categoria, FiltroParceiras, PerfilUsuario, Formulario
+from.models import Usuario, Parceiras, Votacao, Opiniao, TipoAtendimento, Estabelecimento, Categoria, FiltroParceiras, PerfilUsuario
 
 # Registrar os modelos para que fiquem visíveis na página de admin
 admin.site.register(Usuario)
@@ -15,4 +15,3 @@ admin.site.register(Estabelecimento)
 admin.site.register(Categoria)
 admin.site.register(FiltroParceiras)
 admin.site.register(PerfilUsuario)
-admin.site.register(Formulario)

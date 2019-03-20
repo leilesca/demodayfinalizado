@@ -31,20 +31,20 @@
     <h1 class="titulo">PSICÓLOGAS</h1>
     {%  for i in itemsparceiras %}
     {% if i.nome == "Psicologa" %}
-    <div class="info-parceiras">
-        <div info-texto-parceiras>
-            <p class="nome-parceira">{{i.parceiras.nome_parceira}}</p>
-            <p>{{i.parceiras.endereco_atend}}</p>
-            <p>Atendimento {{i.parceiras.tipo_atend}}</p>
-            <p>Valor: {{i.parceiras.valor}}</p>
-            <p>{{i.parceiras.telefone_parceiras}}/{{i.parceiras.celular_parceiras}}</p>
-            <p>{{i.parceiras.email_parceiras}}</p><br>
+        <div class="info-parceiras">
+            <div info-texto-parceiras>
+                <p class="nome-parceira">{{i.parceiras.nome_parceira}}</p>
+                <p>{{i.parceiras.endereco_atend}}</p>
+                <p>Atendimento {{i.parceiras.tipo_atend}}</p>
+                <p>Valor: {{i.parceiras.valor}}</p>
+                <p>{{i.parceiras.telefone_parceiras}}/{{i.parceiras.celular_parceiras}}</p>
+                <p>{{i.parceiras.email_parceiras}}</p><br>
+            </div>
+            <img class="foto-parceira" src="{{i.parceiras.imagem}}" alt=""> 
         </div>
-        <img class="foto-parceira" src="{{i.parceiras.imagem}}" alt=""> 
-    </div>
     {% endif %}
     {% endfor %}
-
+       
     <footer> <p>Desenvolvido por Alps © Todos os direitos reservados</p></footer>
 </body>
 </html>

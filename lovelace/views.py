@@ -32,9 +32,8 @@ def render_home(request):
     return render(request, 'home.html')
 
 def render_maps(request):
-    form = forms.Formulario(request.POST or None)
-    if form.is_valid():
-        form.save()
+    form = forms.Vota(request.POST or None)
+    form.is_valid()
 
     return render(request, 'maps.html', {'form': form})
 

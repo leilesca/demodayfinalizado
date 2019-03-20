@@ -62,7 +62,8 @@ class Estabelecimento(models.Model):
     endereco_estabelecimento = models.CharField(max_length=200)
     horario_estabelecimento = models.CharField(max_length=200)
     telefone_estabelecimento = models.CharField(max_length=20)
-    imagem = models.CharField(max_length=250, default='')
+    nota_estabelecimento = models.CharField(max_length=10, default='')
+    imagem = models.CharField(max_length=250)
     class Meta:
         verbose_name_plural = "Estabelecimento"
 
@@ -74,11 +75,3 @@ class Categoria(models.Model):
     nome = models.CharField(max_length=200, default='')
     class Meta:
         verbose_name_plural = "Categoria"
-
-class Formulario(models.Model):
-    iluminado = models.CharField(max_length=200)
-    movimentado = models.CharField(max_length=200)
-    vigilancia = models.CharField(max_length=200)
-    seguranca = models.CharField(max_length=20, default='')
-    class Meta:
-        verbose_name_plural = "Formulario"

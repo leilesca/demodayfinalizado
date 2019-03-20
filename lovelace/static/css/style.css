@@ -403,22 +403,22 @@ input{
 }
 .foto{
     margin-top: 8px;
-    height: 70%;
-    width:auto;
+    height: 200px;
+    width:200px;
     border:solid;
     border-width: medium;
     border-color: rgb(240, 173, 190);
     margin-bottom: 8px;
-    
+    background-color:white;
 }
 .nome{
-    width:100%;
     color:white;
     padding:5pt;
     background-color: #FF0047;
     font-family: "poiret one";
     font-weight: bold;
     font-size: 22pt;
+    width:250px;
 } 
 
 .info-texto p{
@@ -494,12 +494,11 @@ input{
 }
 .foto-parceira{
     margin-top: 30px;
-    height: 70%;
-    width:auto;
+    height: 200px;
+    width:200px;
     border:solid;
     border-width: medium;
     border-color: rgb(240, 173, 190);
-    
 }
 .nome-parceira{
     border-radius:3px;
